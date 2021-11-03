@@ -599,10 +599,9 @@ Resources:
       BucketName: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-data"
       AccessControl: PublicRead
       Tags:
+      
         - Key: Name
           Value: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-data"
-
-  ### TODO - Custom Upload of insecure document
 
   FinancialsBucket:
     # not encrypted, no access logs, no versioning
@@ -642,6 +641,8 @@ Resources:
         LogFilePrefix: log/
       Tags:
         - Key: Name
+        
+        
           Value: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-data-science"
 
   LogsBucket:

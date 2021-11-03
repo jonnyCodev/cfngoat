@@ -641,8 +641,10 @@ Resources:
         DestinationBucketName: !Ref LogsBucket
         LogFilePrefix: log/
       Tags:
-        - Key: Name
+        - Key: Name       
           Value: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-data-science"
+
+
 
   LogsBucket:
     # not encrypted

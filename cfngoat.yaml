@@ -26,6 +26,8 @@ Parameters:
 
 Resources:
   DataBucket:
+  
+  
     # Public, not encrypted, no access logs, no versioning
     Type: AWS::S3::Bucket
     DeletionPolicy: Delete

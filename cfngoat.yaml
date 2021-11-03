@@ -644,6 +644,7 @@ Resources:
         - Key: Name
           Value: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-data-science"
 
+
   LogsBucket:
     # not encrypted
     Type: AWS::S3::Bucket
